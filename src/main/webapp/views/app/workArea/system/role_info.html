@@ -1,0 +1,17 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">角色名</td>
+                <td colspan='5'><input name="name" id="name" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+                
+            </tr>
+            <tr>
+                <td class="custom-form-label">描述</td>
+                <td colspan="5"><textarea name="descr" class="layui-textarea" rows="4"></textarea></td>
+            </tr>
+        </table>
+        <button type="button" id="role_infoBtn" class="layui-btn" lay-submit="" lay-filter="role_infoFilter" style="display: none;"></button>
+    </form>
+</div>

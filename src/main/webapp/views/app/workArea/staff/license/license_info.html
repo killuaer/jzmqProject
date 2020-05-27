@@ -1,0 +1,75 @@
+<div class="layui-row">
+    <form class="layui-form">
+        <input type="hidden" name="id"/>
+        <div class="layui-form-item" style="margin-top: 5px;">
+        	
+        	<div class="layui-inline layui-col-sm12">
+                 <label class="layui-form-label layui-col-sm2"><span class="mandatory" >*</span>姓名</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffName" id="staffName" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>性别</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffGender" id="staffGender" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>上岗证类别</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="type" id="type" lay-verify="" class="layui-input" >
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                 <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>上岗证号</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="code" id="code" lay-verify="" class="layui-input" >
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span> 有效期限</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input id="validTerm" name="validTerm" lay-verify="" class="layui-input" >
+		                </div>
+            </div>  
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>上岗证名称</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="name" id="name" lay-verify="" class="layui-input" >
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                 <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>年龄</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffAge" id="staffAge" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>身份证号</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffIdcard" id="staffIdcard" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>职称</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffTitle" id="staffTitle" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>最高学历</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffEdu" id="staffEdu" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>专业</label>
+		                <div class="layui-input-inline layui-col-sm9">
+		                    <input name="staffMajor" id="staffMajor" lay-verify="" class="layui-input" readonly>
+		                </div>
+            </div>
+        </div>
+        <button id="license_infoBtn" class="layui-btn" lay-submit="" lay-filter="license_infoFilter" style="display: none;"></button>
+    </form>
+</div> 

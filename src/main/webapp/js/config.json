@@ -1,0 +1,236 @@
+[
+  {
+    "name": "navbar",
+    "path": "app/public/navbar/navbar.js"
+  },
+  {
+    "name": "sidebar",
+    "path": "app/public/sidebar/sidebar.js"
+  },
+  {
+    "name": "wtgl",
+    "path": "app/workArea/wtgl/wtgl_list.js"
+  },
+  {
+    "name": "wtgl_info",
+    "path": "app/workArea/wtgl/wtgl_info.js"
+  },
+  {
+    "name": "wtgl_jcxmgrou",
+    "path": "app/workArea/wtgl/wtgl_jcxmgrou.js"
+  },
+  {
+    "name": "jcxmList",
+    "path": "app/workArea/wtgl/jcxm_list.js"
+  },
+  {
+    "name": "project",
+    "path": "app/workArea/project/project_list.js"
+  },
+  {
+    "name": "project_info",
+    "path": "app/workArea/project/project_info.js"
+  },
+  {
+    "name": "role",
+    "path": "app/workArea/system/role.js"
+  }, 
+  {
+    "name": "role_info",
+    "path": "app/workArea/system/role_info.js"
+  },
+  {
+    "name": "structure",
+    "path": "app/workArea/system/structure.js"
+  }, 
+  {
+    "name": "structure_dept",
+    "path": "app/workArea/system/structure_dept.js"
+  }, 
+  {
+    "name": "structure_account",
+    "path": "app/workArea/system/structure_account.js"
+  }, 
+  {
+    "name": "structure_grantRole",
+    "path": "app/workArea/system/structure_grantRole.js"
+  },
+  {
+    "name": "role_grantUser",
+    "path": "app/workArea/system/role_grantUser.js"
+  },
+  {
+    "name": "role_grantMenu",
+    "path": "app/workArea/system/role_grantMenu.js"
+  },
+  {
+    "name": "dict",
+    "path": "app/workArea/system/dict.js"
+  },
+  {
+    "name": "dict_info",
+    "path": "app/workArea/system/dict_info.js"
+  }, 
+  {
+    "name": "dict_children",
+    "path": "app/workArea/system/dict_children.js"
+  },
+  {
+    "name": "testItem",
+    "path": "app/workArea/system/testItem.js"
+  },
+  {
+    "name": "testItem_category",
+    "path": "app/workArea/system/testItem_category.js"
+  },
+  {
+    "name": "testItem_item",
+    "path": "app/workArea/system/testItem_item.js"
+  },
+  {
+    "name": "testItem_setting",
+    "path": "app/workArea/system/testItem_setting.js"
+  }, 
+  {
+    "name": "testItem_setting_param",
+    "path": "app/workArea/system/testItem_setting_param.js"
+  },
+  {
+    "name": "select_role",
+    "path": "app/workArea/select/select_role.js"
+  },
+  {
+    "name": "entrustRegister",
+    "path": "app/workArea/production/indoor/entrustRegister.js"
+  },
+  {
+    "name": "entrust_info",
+    "path": "app/workArea/production/indoor/entrust_info.js"
+  },
+  {
+    "name": "indoorTest",
+    "path": "app/workArea/production/indoor/indoorTest.js"
+  },
+  {
+    "name": "indoorTest_info",
+    "path": "app/workArea/production/indoor/indoorTest_info.js"
+  },
+  {
+    "name": "indoorTest_info_jcsy",
+    "path": "app/workArea/production/indoor/indoorTest_info_jcsy.js"
+  },
+  {
+    "name": "select_testItem",
+    "path": "app/workArea/production/indoor/select_testItem.js"
+  },
+  {
+    "name": "systemSetting",
+    "path": "app/workArea/system/systemSetting.js"
+  },
+  {
+    "name": "customCode",
+    "path": "app/workArea/system/customCode.js"
+  },
+  {
+    "name": "customCode_info",
+    "path": "app/workArea/system/customCode_info.js"
+  },
+  {
+    "name": "testItem_relate",
+    "path": "app/workArea/system/testItem_relate.js"
+  },
+    {
+    "name": "account",
+    "path": "app/workArea/system/account.js"
+  },
+  {
+    "name": "select_depart",
+    "path": "app/workArea/select/select_depart.js"
+  },
+  {
+    "name": "role_dataPermission",
+    "path": "app/workArea/system/role_dataPermission.js"
+  },
+  {
+    "name": "staff",
+    "path": "app/workArea/staff/staffLedger/staff.js"
+  },
+  {
+    "name": "staff_info",
+    "path": "app/workArea/staff/staffLedger/staff_info.js"
+  },
+  {
+    "name": "log_error",
+    "path": "app/workArea/system/log_error.js"
+  },
+  {
+    "name": "log_operation",
+    "path": "app/workArea/system/log_operation.js"
+  },
+  {
+    "name": "env",
+    "path": "app/workArea/env/envLedger/env.js"
+  },
+  {
+    "name": "env_info",
+    "path": "app/workArea/env/envLedger/env_info.js"
+  },
+  {
+    "name": "license",
+    "path": "app/workArea/staff/license/license.js"
+  },
+  {
+    "name": "license_info",
+    "path": "app/workArea/staff/license/license_info.js"
+  },
+  {
+    "name": "project",
+    "path": "app/workArea/operation/project/project.js"
+  },
+  {
+    "name": "project_info",
+    "path": "app/workArea/operation/project/project_info.js"
+  },
+  {
+    "name": "unit_info",
+    "path": "app/workArea/operation/unit/unit_info.js"
+  },
+  {
+    "name": "unit",
+    "path": "app/workArea/operation/unit/unit.js"
+  },
+  {
+    "name": "select_staff",
+    "path": "app/workArea/select/select_staff.js"
+  },
+  {
+    "name": "license_staff",
+    "path": "app/workArea/staff/license/license_staff.js"
+  },
+  {
+    "name": "select_ryCode",
+    "path": "app/workArea/select/select_ryCode.js"
+  },
+    
+  {
+    "name": "design",
+    "path": "app/workArea/system/activiti/design.js"
+  },
+  {
+    "name": "design_info",
+    "path": "app/workArea/system/activiti/design_info.js"
+  },
+  {
+    "name": "select_wtUnit",
+    "path": "app/workArea/select/select_wtUnit.js"
+  },
+  {
+    "name": "select_project",
+    "path": "app/workArea/select/select_project.js"
+  },
+  {
+    "name": "home",
+    "path": "app/workArea/home/home.js"
+  }
+    
+]

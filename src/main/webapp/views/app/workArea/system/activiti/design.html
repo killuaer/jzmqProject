@@ -1,0 +1,26 @@
+<div class="layui-row">
+    <form class="layui-form">
+        <input name="modelId" id="modelId" type="hidden" value="">
+        <div class="layui-form-item" style="margin-top: 5px;">
+            <div class="layui-inline layui-col-sm4">
+                <label class="layui-form-label layui-col-sm4"><span class="mandatory">*</span>流程名称</label>
+                <div class="layui-input-inline layui-col-sm8">
+                    <input name="name" id="name" lay-verify="required" class="layui-input" autocomplete="false">
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm4">
+                <label class="layui-form-label layui-col-sm4"><span class="mandatory">*</span>流程标识</label>
+                <div class="layui-input-inline layui-col-sm8">
+                    <input name="key" id="key" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm3">
+                <a href="#" class="btn1" onclick="design.add_design()">添加流程</a>
+            </div>
+
+        </div>
+    </form>
+</div>
+<div class="data_list data_list_single">
+    <table class="layui-hide layui-table" id="designTable" lay-size="sm"></table>
+</div>

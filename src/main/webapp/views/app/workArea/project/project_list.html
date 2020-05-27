@@ -1,0 +1,47 @@
+<div class="query_conditions">
+    <div class="query_conditions_main">
+        <ul class="query_conditionss">
+            <li>
+                <span class="layui-col-sm4">工程名称</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="gcName" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">委托单位</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="wtUnit" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">监督登记号</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="jzNum" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>           
+            <li>
+                <span class="layui-col-sm4">业务负责人</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="jzMan" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>           
+            <li>
+                <span class="layui-col-sm4">监督单位</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="jzUnit" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>           
+        </ul>
+    </div>
+
+    <div class="cxbtn">
+        <div class="cxbtnShow">
+        	<a href="#" class="btn1" onclick="project.queryList()">查询</a>
+        	<a href="#" class="btn1" onclick="project.add_entity()">新增</a>
+            <a href="#" class="btn1" onclick="project.toReset()">重置</a><br>
+        </div>
+    </div>
+</div>
+<div class="data_list data_list_single">
+    <table class="layui-hide layui-table" id="projectTable" lay-size="sm"></table>
+</div>

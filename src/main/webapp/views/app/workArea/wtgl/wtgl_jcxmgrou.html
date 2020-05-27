@@ -1,0 +1,56 @@
+<div class="layui-row">
+    <form id="jcxmGrou-Form" class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <div class="popup_title"><span>工程信息</span></div>
+	        <table class="custom-table">
+	        	<tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>委托编号</td>
+	                <td><input name="wtNum" id="wtNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>样品编号</td>
+	                <td><input name="phNum" id="phNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>	                
+	            </tr>
+	            <tr>
+	            	<td class="custom-form-label"><span class="mandatory"></span>鉴定单元</td>
+	                <td><input name="jddy" id="jddy" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>幕墙类型</td>
+	                <td><select name="mqlx" id="mqlx" lay-verify="">
+					        <option value=""></option>
+					        <option value="隐框玻璃幕墙">隐框玻璃幕墙</option>
+					        <option value="点支承玻璃幕墙">点支承玻璃幕墙</option>
+					     </select></td>             
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>位置数量</td>
+	                <td><input name="jdnum" id="jdnum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>鉴定类型</td>
+	                <td>
+	                	<select name="mqType" id="mqType" lay-verify="">
+					        <option value=""></option>
+					        <option value="结构安全性、正常使用性鉴定">结构安全性、正常使用性鉴定</option>
+					        <option value="结构安全性鉴定">结构安全性鉴定</option>
+					        <option value="正常使用性鉴定">正常使用性鉴定</option>
+					        <option value="专项检查">专项检查</option>
+					     </select>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>子单元</td>
+	                <td><select name="mqType" id="mqType" lay-verify="">
+					        <option value=""></option>
+					        <option value="支承构件及连接">支承构件及连接</option>
+					     </select></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>登记时间</td>
+	                <td>
+	                	<div class="date_parent">
+	                	<input id="syDate" name="syDate"  autocomplete="off" class="layui-input custom-input-noborder" readonly ><i class="date_icon"></i>
+	                	</div>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label">备注</td>
+	                <td colspan="3"><input name="beizhu" id="beizhu" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	            </tr>                     
+	         </table>	    
+        <button id="wtgl_jcxmgrouBtn" class="layui-btn" lay-submit="" lay-filter="wtgl_jcxmgrouFilter" style="display: none;"></button>
+    </form>
+</div>

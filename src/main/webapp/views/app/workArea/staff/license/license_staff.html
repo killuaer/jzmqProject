@@ -1,0 +1,29 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id"/>
+        <input type="hidden" name="ryId" id="ryId"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">姓名</td>
+                <td class="search_parent" colspan='5'><input name="staffName" id="staffName" lay-verify="required" class="layui-input custom-input-noborder searchText"><i id="selectStaffBtn" class="fa fa-search input_icon"></i></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>上岗证类别</td>
+                <td colspan='5'><input name="type" id="type" lay-verify="" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">上岗证号</td>
+                <td colspan='5'><input name="code" id="code" lay-verify="" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+             <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>有效期限</td>
+                <td colspan='5'><input name="validTerm" id="validTerm" lay-verify="" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>上岗证名称</td>
+                <td colspan='5'><input name="name" id="name" lay-verify="" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+        </table>
+        <button id="license_staffBtn" class="layui-btn" lay-submit="" lay-filter="license_staffFilter" style="display: none;"></button>
+    </form>
+</div>

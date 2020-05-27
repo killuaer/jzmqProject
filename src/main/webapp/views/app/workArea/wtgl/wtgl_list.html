@@ -1,0 +1,57 @@
+<div class="query_conditions">
+    <div class="query_conditions_main">
+        <ul class="query_conditionss">
+            <li>
+                <span class="layui-col-sm4">委托编号</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="wtNum" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">工程名称</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="gcName" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">工程地址</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="gcAddress" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">委托单位</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="wtUnit" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">鉴定范围</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="qdfw" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">登记时间</span>
+                <div class="layui-input-inline date_parent" style="width: 30%;float: left;">
+                    <input id="starttime" autocomplete="off" class="layui-input custom-input-noborder" readonly="" lay-key="1"><i class="date_icon_main"></i>
+                </div>
+                <p class="toThe">-</p>
+                <div class="layui-input-inline date_parent" style="width: 30%;float: left;">
+                    <input id="endtime" autocomplete="off" class="layui-input custom-input-noborder" readonly="" lay-key="2"><i class="date_icon_main"></i>
+                </div>
+            </li>           
+        </ul>
+    </div>
+
+    <div class="cxbtn">
+        <div class="cxbtnShow">
+        	<a href="#" class="btn1" onclick="wtgl.queryList()">查询</a>
+        	<a href="#" class="btn1" onclick="wtgl.add_entity()">新增</a>
+            <a href="#" class="btn1" onclick="wtgl.toReset()">重置</a><br>
+        </div>
+    </div>
+</div>
+<div class="data_list data_list_single">
+    <table class="layui-hide layui-table" id="jcxmCoreTable" lay-size="sm"></table>
+</div>

@@ -1,0 +1,33 @@
+<input type="hidden" id="selectCategoryId"/>
+<div class="layui-row" style="position: relative;height: 100%;margin: 0 20px;">
+    <div class="leftDiv_item" id="leftDiv">
+        <div class="leftDiv_cx_item">
+            <a href="javascript:void(0);" class="btn1" onclick="testItem.add_category()">新增</a>
+            <a href="javascript:void(0);" class="btn1" onclick="testItem.edit_category()">编辑</a>
+            <a href="javascript:void(0);" class="btn1" onclick="testItem.del_category()">删除</a>
+            <a href="javascript:void(0);" class="btn1" onclick="testItem.relate_category()">关联项目</a>
+            <a href="javascript:void(0);" class="btn1" onclick="testItem.move_category('up')">上移</a>
+            <a href="javascript:void(0);" class="btn1" onclick="testItem.move_category('down')">下移</a>
+        </div>
+        <div class="leftDiv_sx">
+            <ul id="tree_category"></ul>
+        </div>
+    </div>
+    <div style="width: auto;height: 100%;position: relative;margin-left: 391px;">
+        <div id="rightDiv" class="rightDiv">
+            <div class="table_mian">
+            <div class="bgtop">
+                <a class="bgtop_title" href="#">
+                    <span>检测项目</span>
+                </a>
+<!--                <a href="javascript:void(0);" class="btn1" style="float: right;margin-top: 11px;" onclick=testItem.add_item()>新增</a>-->
+            </div>
+             <div class="data_list" style="margin-top: 0px;height: calc(100% - 65px);">
+                <table class="layui-hide layui-table" id="testItemTable" lay-size="sm"></table>
+            </div>   
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class=""></div>

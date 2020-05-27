@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" project-jdk-name="1.8.0_181" project-jdk-type="JavaSDK" />
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="http://192.169.0.6/jc/3htyjsgczljcglxxxt(saasxb)/3H%E9%80%9A%E7%94%A8%E5%BB%BA%E8%AE%BE%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B%E7%AE%A1%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%EF%BC%88SaaS%E6%96%B0%E7%89%88%EF%BC%89/010.%E5%BC%80%E5%8F%91%E5%BA%93/040.%E4%BB%A3%E7%A0%81/newportal/jzmqProject" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

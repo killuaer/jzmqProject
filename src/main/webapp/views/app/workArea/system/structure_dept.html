@@ -1,0 +1,60 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>名称</td>
+                <td colspan='5'><input name="name" id="name" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>类型</td>
+                <td colspan='5'>
+                    <select name="type">
+                        <option value=1>部门</option>
+                        <option value=2>站点</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>排序</td>
+                <td colspan='5'><input name="ord" id="ord" lay-verify="number" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>编号</td>
+                <td colspan='5'><input name="code" id="code" lay-verify="" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+        </table>     
+<!--
+        <div class="layui-form-item" style="margin-top: 5px;">
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory"></span>名称</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="name" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2">类型</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <select name="type">
+                        <option value=1>部门</option>
+                        <option value=2>站点</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory"></span>排序</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="ord" lay-verify="number" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2">编号</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="code" lay-verify="" class="layui-input" >
+                </div>
+            </div>
+        </div>
+-->
+        <button id="structure_deptBtn" class="layui-btn" lay-submit="" lay-filter="structure_deptFilter" style="display: none;"></button>
+    </form>
+</div>

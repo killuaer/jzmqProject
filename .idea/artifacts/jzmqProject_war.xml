@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jzmqProject:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="jzmq.war">
+      <element id="artifact" artifact-name="jzmqProject:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,104 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <input type="hidden" name="wtUnitId" id="wtUnitId"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">委托编号</td>
+                <td colspan='3'><input name="wtNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">委托日期</td>
+                <td class="custom-table-td3 date_parent"><input name="wtDate" id="wtDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" readonly><i class="date_icon"></i></td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>委托单位</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">委托单位</td>
+                <td colspan='3' class="search_parent"><input name="wtUnit" id="wtUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"><i class='fa fa-search input_icon' onclick="selectWtUnitFunc();"></i></td>
+                <td class="custom-form-label">合同编号</td>
+                <td class="custom-table-td3 search_parent"><input name="contractCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"><i class='fa fa-search input_icon'></i></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">委托人</td>
+                <td colspan='3'><input name="wtMan" id="wtMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">联系电话</td>
+                <td><input name="wtManTel" id="wtManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>工程信息</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">工程编号</td>
+                <td colspan='3' class="search_parent"><input name="gcCode" id="gcCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"><i class='fa fa-search input_icon' onclick="selectProjectFunc();"></i></td>
+                <td class="custom-form-label">交易中心编码</td>
+                <td class="custom-table-td3"><input name="gcNum" id="gcNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">工程名称</td>
+                <td colspan='3'><input name="gcName" id="gcName" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">分项工程</td>
+                <td><input name="gcSub" id="gcSub" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">工程地址</td>
+                <td colspan='3'><input name="gcAddress" id="gcAddress" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">工程所属行政区域</td>
+                <td>
+<!--                    <input name="techResp" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder">-->
+                    <div class="layui-input-inline layui-col-sm4">
+                        <select name="province" id="rProvince" lay-filter="rProvince">
+                            <option value="">省</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <select name="city" id="rCity" lay-filter="rCity" disabled>
+                            <option value="">市</option>
+                        </select>
+                    </div>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <select name="area" id="rTown" lay-filter="rTown" disabled>
+                            <option value="">县/区</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">工程类型</td>
+                <td><input name="gcType" id="gcType" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">建筑性质</td>
+                <td><input name="" id="buildingNature" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">建筑结构形式</td>
+                <td><input name="" id="buildingStyle" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">建设单位</td>
+                <td><input name="jsUnit" id="jsUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">施工单位</td>
+                <td><input name="sgUnit" id="sgUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">监理单位</td>
+                <td><input name="jlUnit" id="jlUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设计单位</td>
+                <td><input name="sjUnit" id="sjUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">取样员</td>
+                <td><input name="qyMan" id="qyMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">见证员</td>
+                <td><input name="jzMan" id="jzMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">勘察单位</td>
+                <td><input name="kcUnit" id="kcUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">取样员编号</td>
+                <td><input name="qyManId" id="qyManId" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">见证员编号</td>
+                <td><input name="jzManId" id="jzManId" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>样品信息</span><a href="#" class="btn1" onclick="selectXm()" style="float: right;">新增</a></div>
+        <table id="table_ypxx" class="custom-table">
+        </table>
+        <div class="popup_title"><span>样品列表</span><a href="#" class="btn1" onclick="" style="float: right;">复制</a></div>
+        <button id="todoWork_infoBtn" class="layui-btn" lay-submit="" lay-filter="todoWork_infoFilter" style="display: none;"></button>
+    </form>
+</div>

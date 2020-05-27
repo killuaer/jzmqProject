@@ -1,0 +1,41 @@
+<div class="layui-row">
+    <form class="layui-form">
+        <input type="hidden" name="id"/>
+        <div class="layui-form-item" style="margin-top: 5px;">
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>文件标题</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="menuName" id="menuName" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2">类型</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <select name="menuType" id="menuType">
+                        <option value="测试1">测试1</option>
+                        <option value="测试2">测试2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>摄像头名称</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="cameraName" id="cameraName" lay-verify="required" class="layui-input" >
+                </div>
+            </div> 
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>摄像头ID</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="cameraUuid" id="cameraUuid" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2">所属机构</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="jcUnit" id="jcUnit" lay-verify="" class="layui-input" readonly>
+                </div>
+            </div>
+        </div>
+        <button id="workflow_infoBtn" class="layui-btn" lay-submit="" lay-filter="workflow_infoFilter" style="display: none;"></button>
+    </form>
+</div>

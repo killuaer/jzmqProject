@@ -1,0 +1,164 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <div class="popup_title"><span>工程信息</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>工程名称</td>
+                <td><input name="gcName" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">分项工程</td>
+                <td><input name="gcSub" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>工程编号</td>
+                <td><input name="gcCode" id="gcCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" readonly></td>
+                <td class="custom-form-label">监督登记号</td>
+                <td><input name="gcJianduId" id="gcJianduId" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>工程类型</td>
+                <td><select name="type" id="type"></select></td>
+                <td class="custom-form-label"><span class="mandatory"></span>工程所属行政区域</td>
+                <td><input name="province" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>工程地址</td>
+                <td><input name="address" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">地理位置</td>
+                <td><input name="" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">建筑结构形式</td>
+                <td><select name="buildingStyle" id="buildingStyle"></select></td>
+                <td class="custom-form-label">建筑性质</td>
+                <td><select name="buildingNature" id="buildingNature"></select></td>
+                
+            </tr>
+         </table>
+         <div class="popup_title"><span>五方责任主体单位信息</span></div>
+         <table class="custom-table" style="table-layout: fixed;">
+            <tr>
+                <td class="custom-form-label">建设单位</td>
+                <td><input name="jsUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">联系人/电话</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="jsMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="jsManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">施工单位</td>
+                <td><input name="sgUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">联系人/电话</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="sgMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="sgManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">监理单位</td>
+                <td><input name="jlUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">联系人/电话</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="jlMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="jlManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设计单位</td>
+                <td><input name="sjUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">联系人/电话</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="sjMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="sjManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">勘察单位</td>
+                <td><input name="kcUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">联系人/电话</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="kcMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="kcManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>见证取样人员信息</span></div>
+        <table class="custom-table" style="table-layout: fixed;">
+            <tr>
+                <td class="custom-form-label">取样员及编号</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="qyMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="qyManCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+                <td class="custom-form-label">手机电话</td>
+                <td><input name="qyManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">见证员及编号</td>
+                <td>
+                    <div class="layui-input-inline layui-col-sm4">
+                        <input name="jzMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                    <div class="layui-input-inline layui-col-sm1" style="text-align: center;line-height: 25px;">
+                        /
+                    </div>
+                    <div class="layui-input-inline layui-col-sm7">
+                        <input name="jzManCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="">
+                    </div>
+                </td>
+                <td class="custom-form-label">手机电话</td>
+                <td><input name="jzManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">登记人</td>
+                <td><input name="creator" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" readonly></td>
+                <td class="custom-form-label">登记时间</td>
+                <td><input name="createTimeStr" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" value="" readonly></td>
+            </tr>
+        </table>
+        <button id="project_infoBtn" class="layui-btn" lay-submit="" lay-filter="project_infoFilter" style="display: none;"></button>
+    </form>
+</div>

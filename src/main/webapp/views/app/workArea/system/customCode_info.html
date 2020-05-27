@@ -1,0 +1,94 @@
+<div class="layui-row">
+    <form class="layui-form" method="POST" id="paramForm" style="padding: 10px;">
+        <input type="hidden" name="id"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>编号名称</td>
+                <td colspan='5'><input name="name" id="name_parameter" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>编号格式</td>
+                <td colspan='5'><input name="codeFormat" id="codeFormat_parameter" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>编号流水号周期</td>
+                <td colspan='5'>
+                    <select name="cycle" id="cycle_parameter">
+                        <option value="年">年</option>
+                        <option value="月">月</option>
+                        <option value="日">日</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>编号说明</td>
+                <td colspan='5'>
+                    <textarea class="layui-textarea" readonly rows="14">
+                            编码格式：[BM][XM][ZD][GCLX][SJLB]####yyyymmdd-xxxx
+                            ①[BM]——部门代码（注：当部门代码为00）
+                            ②[XM]——项目代码 
+                            ③[ZD]——站点代码 
+                            ④[GCLX]——工程类型
+                            ⑤[SJLB]——送检类别
+                            ⑥#——不包含字母y,m,d,x的字符串，必须大写，数量不限
+                            ⑦y——年份(2/4位)，必须小写
+                            ⑧m——月份(2位)，必须小写
+                            ⑨d——天(2位)，必须小写
+                            ⑩x——流水号(4-8位)，必须小写
+                            ⑪以‘-’隔开流水号和字符串
+                            ⑫系统使用后修改编号流水号周期可能会导致重号问题
+                    </textarea>
+                </td>
+            </tr>
+        </table>
+<!--
+        <div class="layui-row"> 
+            <div class="layui-form-item" style="margin-top: 5px;">
+                <div class="layui-inline layui-col-sm12">
+                    <label class="layui-form-label layui-col-sm2">编号名称</label>
+                    <div class="layui-input-inline layui-col-sm10">
+                        <input type="text" lay-verify="required" class="layui-input" name="name" id="name_parameter" /> 
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-sm12">
+                    <label class="layui-form-label layui-col-sm2">编号格式</label>
+                    <div class="layui-input-inline layui-col-sm10">
+                        <input type="text" lay-verify="required" class="layui-input" name="codeFormat" id="codeFormat_parameter" /> 
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-sm12">
+                    <label class="layui-form-label layui-col-sm2">编号流水号周期</label>
+                    <div class="layui-input-inline layui-col-sm10">
+                        <select name="cycle" id="cycle_parameter">
+                            <option value="年">年</option>
+                            <option value="月">月</option>
+                            <option value="日">日</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline layui-col-sm12">
+                    <label class="layui-form-label layui-col-sm2">编号说明</label>
+                    <div class="layui-input-inline layui-col-sm10">
+                        <textarea class="layui-textarea" readonly rows="14">
+                                编码格式：[BM][XM][ZD][GCLX][SJLB]####yyyymmdd-xxxx
+                                ①[BM]——部门代码（注：当部门代码为00）
+                                ②[XM]——项目代码 
+                                ③[ZD]——站点代码 
+                                ④[GCLX]——工程类型
+                                ⑤[SJLB]——送检类别
+                                ⑥#——不包含字母y,m,d,x的字符串，必须大写，数量不限
+                                ⑦y——年份(2/4位)，必须小写
+                                ⑧m——月份(2位)，必须小写
+                                ⑨d——天(2位)，必须小写
+                                ⑩x——流水号(4-8位)，必须小写
+                                ⑪以‘-’隔开流水号和字符串
+                                ⑫系统使用后修改编号流水号周期可能会导致重号问题
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+        <button id="customCode_infoBtn" class="layui-btn" lay-submit="" lay-filter="customCode_infoFilter" style="display: none;"></button>
+    </form>
+</div>

@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ui.xsd" -->
+<panel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ui.xsd" num="0" type="table" border="1" cellSpacing="1" importClass="com.hhh.fund.web.model.UiTestBean"  cellPadding="3" defaultValue="$U_CHECKBOX_ON$" width="100%">
+	<row num="1" type="tr">
+		<col num="11" type="td_start" style="display:none;" />
+		<col num="13" type="text" id="id" style="display:none;" binding="id" itemNote="id" class="input"/>
+		<col num="11" type="td_end" style="display:none;" />
+		<col num="11" type="td" align="center" class="tableRow1" style="width:150px" value="name" />
+		<col num="11" type="td_start" />
+		<col num="13" type="text" id="name" style="width:100%" binding="name" itemNote="name" class="input"/>
+		<col num="11" type="td_end" />
+	</row>
+	<row num="1" type="tr">
+		<col num="11" type="td" align="center" class="tableRow1" style="width:150px" value="realname" />
+		<col num="11" type="td_start" colspan="2" />
+		<col num="13" type="text" id="realname" style="width:100%" binding="realname" class="input"/>
+		<col num="11" type="td_end" />
+        <col num="11" type="td" align="center" class="tableRow1" style="width:150px" value="num" />
+		<col num="11" type="td_start" colspan="2" />
+		<col num="13" type="text" id="num"  style="width:100%" binding="num" itemNote="通知书编号" class="input"/>
+		<col num="11" type="td_end" />
+
+	</row>
+	<row num="2" type="tr">
+		<col num="21" type="td" align="center" class="tableRow1" style="width:150px" value="content" />
+		<col num="21" type="td_start" colspan="2" />
+		<col num="24" type="checkbox" name="content2" value="123" id="content2" position="after" />
+		<col num="24" type="checkbox" name="content1" value="456" id="content1" position="after" />
+		<col num="21" type="td_end" />
+        <col num="21" type="td" align="center" class="tableRow1" style="width:150px" value="sex" />
+		<col num="21" type="td_start" colspan="2" />
+		<col num="94" type="radio" name="sex" id="sex1" value="男"  position="after" />
+		<col num="13" type="label" style="width:100%" value="男"/>
+		<col num="95" type="radio" name="sex" id="sex2" value="女" position="after" />
+		<col num="13" type="label" style="width:100%" value="女"/>
+		<col num="21" type="td_end" /> 
+
+	</row> 
+	<row num="3" type="tr">
+		<col num="32" type="td_start" class="tableRow2" style="width:170px" />
+		<col num="33" type="select_start" id="address" name="address" class="input_long" />
+		<col num="34" type="option" value="" />
+		<col num="35" type="option" value="天河区" />
+		<col num="36" type="option" value="海珠区" />
+		<col num="37" type="option" value="荔湾区" />
+		<col num="38" type="option" value="黄浦区" />
+		<col num="39" type="option" value="番禺区" />
+		<col num="3a" type="select_end"/>
+		<col num="34" type="td_end" />
+
+
+	</row>
+	
+	
+</panel>
+
+

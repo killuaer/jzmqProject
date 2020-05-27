@@ -1,0 +1,134 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <div class="popup_title"><span>工程信息</span></div>
+        <table class="custom-table">
+			  <tr>
+			    <input type="hidden" name="SY_NUM" />
+			    <input type="hidden" name="sampleId" />
+			    <input type="hidden" name="grouTable" id="grouTable"/>
+			    <input type="hidden" name="xmId" id="xmId"/>
+			    <td class='label'><span class="font-red">*</span>样品编号</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="sampleCode" name="sampleCode"
+			               onclick="entrustRegister.newSampleCode()" lay-verify="required">
+			        <input type="hidden" name="PH_NUM" id="PH_NUM"/>
+			    </td>
+			    <td class='label '><span class="font-red">*</span>样品名称</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="sampleName" name="sampleName" lay-verify="required" disabled>
+			        <input type="hidden" name="YP_NAME" id="YP_NAME"/>
+			    </td>
+			    <td class='label '><span class="font-red">*</span>执行标准</td>
+			    <td class="font-red">
+			        <input type="text" class="layui-input" id="defaultPdStd" name="defaultPdStd" lay-verify="required" disabled>
+			    </td>
+			</tr>
+			<tr>
+			    <td class='label '><span class="font-red">*</span>检测参数</td>
+			    <td colspan="5" class=" font-red">
+			        <div class="layui-form-item">
+			            <div class="layui-input-block" style="margin-left:0px;" id="td_jc_param_check">
+			                <!--<input type="checkbox" id="detectionParam" name="detectionParam" value="抗压强度" title="抗压强度" checked>-->
+			            </div>
+			        </div>
+			    </td>
+			</tr>
+			<tr>
+			    <td class='label '><span class="font-red">*</span>检测类别</td>
+			    <td>
+			        <!--<input type="text" class="layui-input" name="startUserName" value="国家数字电影产业园综合大楼">-->
+			        <div class="layui-input-block" style="margin-left: 0px">
+			            <select name="SG" id="SG" lay-verify="required">
+			                <option value=""></option>
+			                <option value="委托检验">委托检验</option>
+			                <option value="监督抽验">监督抽检</option>
+			                <option value="有见证检验">有见证检验</option>
+			                <option value="巡查">巡查</option>
+			                <option value="其它">其它</option>
+			            </select>
+			        </div>
+			    </td>
+			    <td class='label '>工程部位</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="GJ_NAME" name="GJ_NAME" value="">
+			    </td>
+			    <td class='label '>厂家编号</td>
+			    <td class="font-red">
+			        <input type="text" class="layui-input" id="FAC_NUM" name="HNT_SEQID" value="">
+			    </td>
+			</tr>
+			<tr>
+			    <td class='label'>生产厂家</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="NI_FACTORY" name="NI_FACTORY" value="">
+			    </td>
+			    <td class='label '>生产日期</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="FAC_DATE" name="FAC_DATE" lay-verify="required">
+			    </td>
+			    <td class='label'>代表批量</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="DB_NUM" name="DB_NUM" value="">
+			    </td>
+			</tr>
+			<tr>
+			    <td class='label'>批号</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="DB_CODE" name="DB_CODE" value="">
+			    </td>
+			    <td class='label '>产品名称</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="CP_NAME" name="CP_NAME" lay-verify="required">
+			    </td>
+			    <td class='label'>样品数量</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="YP_ZL" name="YP_ZL" value="">
+			    </td>
+			</tr>
+			<tr>
+			    <td class='label'>分类</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="FENLEI" name="FENLEI" value="">
+			    </td>
+			    <td class='label '>材料比例</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="CLYL" name="CLYL" lay-verify="required">
+			    </td>
+			    <td class='label'>单道施工厚度(mm)</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="DDSGHD" name="DDSGHD" value="">
+			    </td>
+			</tr>
+			<tr>
+				<td class='label '><span class="font-red">*</span>类别</td>
+			    <td class=" font-red">
+			        <input type="number" class="layui-input" id="LEIBIE" name="LEIBIE" value="" lay-verify="required">
+			    </td>
+			    <td class='label '><span class="font-red">*</span>建筑层数</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="JZ_JZLC" name="JZ_JZLC" lay-verify="required">
+			    </td>
+			    <td class='label '><span class="font-red">*</span>要求试验日期</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="YQ_CH_DATE" name="YQ_CH_DATE" lay-verify="required">
+			    </td>			
+			</tr>
+			<tr>
+			    <td class='label'>样品状态</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="YP_STATUS" name="YP_STATUS" value="正常">
+			    </td>
+			    <td class='label '>检测场所</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="WT_JCCS" name="WT_JCCS" value="">
+			    </td>
+			    <td class='label'>检测部门</td>
+			    <td class=" font-red">
+			        <input type="text" class="layui-input" id="DEPARTMENT" name="DEPARTMENT" value="">
+			    </td>
+			</tr>       
+         </table>
+        <button id="project_infoBtn" class="layui-btn" lay-submit="" lay-filter="project_infoFilter" style="display: none;"></button>
+    </form>
+</div>

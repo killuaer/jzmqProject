@@ -1,0 +1,32 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>名称</td>
+                <td colspan='5'><input name="name" id="name" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>排序</td>
+                <td colspan='5'><input name="ord" id="ord" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+        </table>
+<!--
+        <div class="layui-form-item" style="margin-top: 5px;">
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>名称</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="name" id="name" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>排序</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="ord" id="ord" lay-verify="number" class="layui-input" >
+                </div>
+            </div>
+        </div>
+-->
+        <button id="testItem_categoryBtn" class="layui-btn" lay-submit="" lay-filter="testItem_categoryFilter" style="display: none;"></button>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <div class="popup_title"><span>工程信息</span></div>
+        <table class="custom-table">
+            <tr>
+            	<td class="custom-form-label"><span class="mandatory"></span>工程项目编号</td>
+                <td><input name="gcCode" id="gcCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label"><span class="mandatory"></span>工程名称</td>
+                <td><input name="gcName" id="gcName" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>               
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>委托单位</td>
+                <td><input name="wtUnit" id="wtUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label"><span class="mandatory"></span>工程地址</td>
+                <td><input name="gcAddress" id="gcAddress" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>委托人</td>
+                <td><input name="wtMan" id="wtMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label"><span class="mandatory"></span>委托人电话</td>
+                <td><input name="wtManTel" id="wtManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>业务负责人</td>
+                <td><input name="jzMan" id="jzMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label"><span class="mandatory"></span>监督登记号</td>
+                <td><input name="jzNum" id="jzNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+            	<td class="custom-form-label"><span class="mandatory"></span>监督单位</td>
+                <td colspan="3"><input name="jzUnit" id="jzUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+         </table>
+        <button id="project_infoBtn" class="layui-btn" lay-submit="" lay-filter="project_infoFilter" style="display: none;"></button>
+    </form>
+</div>

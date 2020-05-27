@@ -1,0 +1,260 @@
+<div class="layui-row" style="position: relative;height: 100%;margin: 0 20px;">
+    <div class="leftDiv" id="leftDiv">
+        <div class="leftDiv_sx" style="padding-top: 10px;">
+            <ul id="tree_item"></ul>
+        </div>
+    </div>
+    <div style="width: auto;height: 100%;position: relative;margin-left: 321px;">
+        <div id="rightDiv" class="rightDiv">
+            <input type="hidden" id="selectItemId" />
+            <div class="layui-tab layui-tab-brief" lay-filter="testItem_settingBrief" style="margin: 0px;height: 100%;overflow: hidden;">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">常规</li>
+                    <li>检测参数</li>
+                </ul>
+                <div class="layui-tab-content" style="height: calc(100% - 41px);overflow: auto;padding: 0 10px;">
+                    <div class="layui-tab-item layui-show" style="padding-bottom: 10px;">
+                        <form class="layui-form" id="testItem_settingForm">
+                            <input type="hidden" name="id"/>
+                            <div class="popup_title"><span>项目属性</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">项目ID</td>
+                                    <td><input name="xmId" id="xmId_setting" class="layui-input custom-input-noborder" readonly></td>
+                                    <td class="custom-form-label">项目代码</td>
+                                    <td><input name="xmNum" id="xmNum_setting"class="layui-input custom-input-noborder" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">缺省项目名称</td>
+                                    <td><input name="xmName" id="xmName_setting" class="layui-input custom-input-noborder" readonly></td>
+                                    <td class="custom-form-label">项目名称</td>
+                                    <td><input name="customXmName" id="customXmName_setting"class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">原始记录标题</td>
+                                    <td><input name="originalTitle" id="originalTitle_setting" class="layui-input custom-input-noborder" ></td>
+                                    <td class="custom-form-label">是否盲检</td>
+                                    <td>
+                                        <select name="isBlindTest" id="isBlindTest_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">默认检测标准</td>
+                                    <td>
+                                        <select name="defaultPdStd" id="defaultPdStd_setting">
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>编码格式</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">样品编号编码格式</td>
+                                    <td colspan="1">
+                                        <select name="phNumCodeFormat" id="phNumCodeFormat_setting"></select>
+                                    </td>
+                                    <td class="custom-form-label">样品编号代码</td>
+                                    <td colspan="1"><input name="phNumCode" id="phNumCode_setting"class="layui-input custom-input-noborder"></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">报告编号编码格式</td>
+                                    <td>
+                                        <select name="prtnumCodeFormat" id="prtnumCodeFormat_setting"></select>
+                                    </td>
+                                    <td class="custom-form-label">报告编号代码</td>
+                                    <td><input name="prtnumCode" id="prtnumCode_setting"class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">样品委托编号编码格式</td>
+                                    <td>
+                                        <select name="sampleWtnumCodeFormat" id="sampleWtnumCodeFormat_setting"></select>
+                                    </td>
+                                    <td class="custom-form-label">样品委托编号代码</td>
+                                    <td><input name="sampleWtnumCode" id="sampleWtnumCode_setting"class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>整体操作控制</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">是否自动采集</td>
+                                    <td>
+                                        <select name="isZdcj" id="isZdcj_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                    <td class="custom-form-label">是否启用网上委托</td>
+                                    <td>
+                                        <select name="isWtOl" id="isWtOl_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td class="custom-form-label">自动采集站点设置</td>
+                                    <td><input name="zdcjStationId" id="zdcjStationId_setting" class="layui-input custom-input-noborder" readonly><i class="fa fa-search input_icon"></i></td>
+                                </tr>-->
+                                <tr>
+                                    <td class="custom-form-label">一键打印设置</td>
+                                    <td colspan="5" style="height:30px;padding-left:10px;">
+                                        <input type="checkbox" name="is_print_wtxys" value="y" title="委托协议书" lay-skin="primary">
+                                        <input type="checkbox" name="is_print_task" value="y" title="任务单" lay-skin="primary">
+                                        <input type="checkbox" name="is_print_ypbq" value="y" title="样品标签" lay-skin="primary">
+                                        <input type="checkbox" name="is_print_bgpz" value="y" title="报告凭证" lay-skin="primary">
+                                        <input type="checkbox" name="is_print_original" value="y" title="原始记录" lay-skin="primary">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>录入控制</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">是否提示打印异常通知单</td>
+                                    <td>
+                                        <select name="isUnqualified" id="isUnqualified_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                    <td class="custom-form-label">检测数据录入时是否显示原始记录编号</td>
+                                    <td>
+                                        <select name="isVisibleOriginalityNum" id="isVisibleOriginalityNum_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">是否自动计算评定</td>
+                                    <td>
+                                        <select name="isAutoAssess" id="isAutoAssess_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                    <td class="custom-form-label">是否可手工录入结论</td>
+                                    <td>
+                                        <select name="isAutoNote" id="isAutoNote_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>报告控制</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">打印方向</td>
+                                    <td>
+                                        <select name="orientation" id="orientation_setting">
+                                            <option value=""></option>
+                                            <option value="横向">横向</option>
+                                            <option value="纵向">纵向</option>
+                                        </select>
+                                    </td>
+                                    <td class="custom-form-label">是否打印电子签名</td>
+                                    <td>
+                                        <select name="isPrintDzqm" id="isPrintDzqm_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">报告阶段是否自动计算评定</td>
+                                    <td>
+                                        <select name="isReportAutoAssess" id="isReportAutoAssess_setting">
+                                            <option value=""></option>
+                                            <option value="是">是</option>
+                                            <option value="否">否</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>条形码控制</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">条形码</td>
+                                    <td>
+                                        <select name="isPrintTxm" id="isPrintTxm_setting">
+                                            <option value=""></option>
+                                            <option value="不打印条形码">不打印条形码</option>
+                                            <option value="打印一维码">打印一维码</option>
+                                            <option value="打印二维码">打印二维码</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>监管项目分类</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">项目分类代号</td>
+                                    <td><input name="xmNumJg" id="xmNumJg_setting" class="layui-input custom-input-noborder" ></td>
+                                    <td class="custom-form-label">报告管理编号</td>
+                                    <td><input name="reportGlNum" id="reportGlNum_setting"class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">项目数据库表</td>
+                                    <td><input name="grouTable" id="grouTable_setting" class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                            </table>
+                            <div class="popup_title"><span>省统表控制</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">省统表编号</td>
+                                    <td><input name="stbNum" id="stbNum_setting" class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                            </table>
+                            <!--<div class="popup_title"><span>检测报告说明</span></div>
+                            <table class="custom-table">
+                                <tr>
+                                    <td class="custom-form-label">检测报告说明1</td>
+                                    <td colspan="5"><input name="reportDeclare1" id="reportDeclare1_setting" class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">检测报告说明2</td>
+                                    <td colspan="5"><input name="reportDeclare2" id="reportDeclare2_setting" class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">检测报告说明3</td>
+                                    <td colspan="5"><input name="reportDeclare3" id="reportDeclare3_setting" class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">检测报告说明4</td>
+                                    <td colspan="5"><input name="reportDeclare4" id="reportDeclare4_setting" class="layui-input custom-input-noborder" ></td>
+                                </tr>
+                                <tr>
+                                    <td class="custom-form-label">说明</td>
+                                    <td colspan="5"><input class="layui-input custom-input-noborder" value="检测报告说明可设置来源于检测场所的单位相关信息，通配符规则如下：[单位名称]、[单位地址]、[联系电话]、[单位邮编]、[单位传真]" readonly></td>
+                                </tr>
+                            </table>-->
+                            <button id="testItem_settingBtn" class="layui-btn main_btn" lay-submit="" lay-filter="dict_infoFilter">保存</button>
+                        </form>
+                    </div>
+                    <div class="layui-tab-item">
+                        <div class="bgtop">
+                            <a href="#" class="bgtop_title">
+                                <span>参数列表</span>
+                            </a>
+                        </div>
+                        <div class="data_list" style="margin-top: 0px;height: calc(100% - 65px);">
+                            <table class="layui-hide layui-table" id="paramTable" lay-size="sm"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

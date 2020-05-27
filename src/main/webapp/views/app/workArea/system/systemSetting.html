@@ -1,0 +1,314 @@
+<div class="layui-row" style="position: relative;height: 100%;margin: 0 20px;">
+    <div class="leftDiv" id="leftDiv">
+        <div class="leftDiv_sx" style="padding-top: 10px;">
+            <ul id="tree_systemSetting"></ul>
+        </div>
+    </div>
+    <div style="width: auto;height: 100%;position: relative;margin-left: 321px;">
+        <div id="rightDiv1" class="rightDiv" style="display:none;">
+            <form class="layui-form" method="POST" style="padding-right: 30px;padding-top: 10px;display: inline-block;">
+                <div class="layui-form-item" style="margin-top: 5px;">
+                <div class="layui-row"> 
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">任务单及报告凭证样式</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="task_bgpz_style" id="task_bgpz_style">
+                                <option value="多组">多组</option>
+                                <option value="单组">单组</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">检测类别不同是否分开组号</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_different_sg_rebulid_sn" id="is_different_sg_rebulid_sn">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">委托登记时可收样项目是否根据合同过滤</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_filter_xmId_byContract" id="is_filter_xmId_byContract">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">复检时是否验证初检报告编号</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_source_prtnum_open" id="is_source_prtnum_open">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">复检时是否开放初检编号录入</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_source_ph_num_open" id="is_source_ph_num_open">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm12">
+                        <label class="layui-form-label layui-col-sm2">委托登记打印标签页设置</label>
+                        <div class="layui-input-inline layui-col-sm10">
+                          <input type="checkbox" name="is_show_commission_wtcol" value="y" title="委托协议书[汇总]">
+                          <input type="checkbox" name="is_show_commission_wt" value="y" title="委托协议书">
+                          <input type="checkbox" name="is_show_commission_task" value="y" title="任务单">
+                          <input type="checkbox" name="is_show_commission_biaoqian" value="y" title="样品标签">
+                          <input type="checkbox" name="is_show_commission_bgpz" value="y" title="领取报告凭证">
+                          <input type="checkbox" name="is_show_commission_original" value="y" title="原始记录">
+                          <input type="checkbox" name="is_show_commission_liuyang" value="y" title="留样卡">
+                          <input type="checkbox" name="is_show_commission_jianding" value="y" title="鉴定卡">
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告查询码生成格式<input name="quaryCode_num" id="quaryCode_num" style="width:20px;"/>位</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <input name="quaryCode" value="quaryCode_isNumber" title="纯数字" type="radio">
+                            <input name="quaryCode" value="quaryCode_isLetter" title="纯字母" type="radio">
+                            <input name="quaryCode" value="quaryCode_isMix" title="数字加字母" type="radio">
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">工程信息是否按站点过滤</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="fileter_gc_by_station" id="fileter_gc_by_station">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">委托作废申请是否只能本人操作</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="wt_discard_apply_only_oneself" id="wt_discard_apply_only_oneself">
+                                <option value="是">是</option>
+                                <option value="否">否</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block" style="text-align: right;margin-top: 20px;">
+                        <button class="layui-btn" lay-submit lay-filter="submitFilter1" style="border-color: #1E9FFF;background-color: #1E9FFF;">保存</button>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div id="rightDiv2" class="rightDiv" style="display:none;">
+            <form class="layui-form" method="POST" style="padding-right: 30px;padding-top: 10px;display: inline-block;">
+                <div class="layui-form-item" style="margin-top: 5px;">
+                <div class="layui-row"> 
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">是否启用报告预览</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_report_scan" id="is_report_scan">
+                                <option value="是">是</option>
+                                <option value="否">否</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">原始记录是否显示电子签名</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_original_signature_show" id="is_original_signature_show">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">数据录入是否可输入判定依据</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_show_pd_std_ex" id="is_show_pd_std_ex">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">数据录入是否可输入试验依据</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_show_pd_std_sy" id="is_show_pd_std_sy">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block" style="text-align: right;margin-top: 20px;">
+                        <button class="layui-btn" lay-submit lay-filter="submitFilter2" style="border-color: #1E9FFF;background-color: #1E9FFF;">保存</button>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div id="rightDiv3" class="rightDiv" style="display:none;">
+            <form class="layui-form" method="POST" style="padding-right: 30px;padding-top: 10px;display: inline-block;">
+                <div class="layui-form-item" style="margin-top: 5px;">
+                <div class="layui-row"> 
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">单位资质</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <input name="unit_zz" id="unit_zz" lay-verify="required" class="layui-input" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">计量认证号</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <input name="ma_code" id="ma_code" lay-verify="required" class="layui-input" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告模板标识</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="tc_id" id="tc_id">
+                                <option value="szsl">szsl</option>
+                                <option value="bjjc">bjjc</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告编号生成阶段</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="genernal_prtnum_phase" id="genernal_prtnum_phase">
+                                <option value="委托登记">委托登记</option>
+                                <option value="报告批准">报告批准</option>
+                                <option value="报告归档">报告归档</option>
+                                <option value="报告打印">报告打印</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告日期来源设置</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="report_date_source_set" id="report_date_source_set">
+                                <option value=""></option>
+                                <option value="报告打印日期">报告打印日期</option>
+                                <option value="报告批准日期">报告批准日期</option>
+                                <option value="报告归档日期">报告归档日期</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告完成阶段</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="report_success_phase" id="report_success_phase">
+                                <option value="报告批准完成">报告批准完成</option>
+                                <option value="报告打印完成">报告打印完成</option>
+                                <option value="报告归档完成">报告归档完成</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm12">
+                        <label class="layui-form-label layui-col-sm2">检测报告说明1</label>
+                        <div class="layui-input-inline layui-col-sm10">
+                            <input name="report_declare1" id="report_declare1" lay-verify="" class="layui-input" value="1、若对报告有异议，应于收到报告之日起15日内，以书面形式向检测单位提出，逾期视为对报告无异议。" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm12">
+                        <label class="layui-form-label layui-col-sm2">检测报告说明2</label>
+                        <div class="layui-input-inline layui-col-sm10">
+                            <input name="report_declare2" id="report_declare2" lay-verify="" class="layui-input" value="2、送样检测，仅对来样检测负责。3、未加盖本中心检测专用检测章，报告无效。" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm12">
+                        <label class="layui-form-label layui-col-sm2">检测报告说明3</label>
+                        <div class="layui-input-inline layui-col-sm10">
+                            <input name="report_declare3" id="report_declare3" lay-verify="" class="layui-input" value="4、报告封面、结论页、数据首页未贴本中心防伪标记视为无效。" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm12">
+                        <label class="layui-form-label layui-col-sm2">检测报告说明4</label>
+                        <div class="layui-input-inline layui-col-sm10">
+                            <input name="report_declare4" id="report_declare4" lay-verify="" class="layui-input" value="" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm12">
+                        <label class="layui-form-label layui-col-sm2">说明</label>
+                        <div class="layui-input-inline layui-col-sm10">
+                            <input class="layui-input" value="检测报告说明可设置来源于检测场所的单位相关信息，通配符规则如下：[单位名称]、[单位地址]、[联系电话]、[单位邮编]、[单位传真]" readonly>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告打印是否可以控制电子签名打印</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="report_print_operate_sn" id="report_print_operate_sn">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告印章是否根据有效期版本控制</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="report_stamper_control" id="report_stamper_control">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">报告打印时是否可进行电子印章打印</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="report_print_seal" id="report_print_seal">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block" style="text-align: right;margin-top: 20px;">
+                        <button class="layui-btn" lay-submit lay-filter="submitFilter2" style="border-color: #1E9FFF;background-color: #1E9FFF;">保存</button>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div id="rightDiv4" class="rightDiv" style="display:none;">
+            <form class="layui-form" method="POST" style="padding-right: 30px;padding-top: 10px;display: inline-block;">
+                <div class="layui-form-item" style="margin-top: 5px;">
+                <div class="layui-row"> 
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">计价人员直接调整价格差异限值上限</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <input name="finance_charge_phase_up" id="finance_charge_phase_up" lay-verify="" class="layui-input" value="" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">计价人员直接调整价格差异限值下限</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <input name="finance_charge_phase_down" id="finance_charge_phase_down" lay-verify="" class="layui-input" value="" >
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-sm6">
+                        <label class="layui-form-label layui-col-sm4">原始记录是否显示电子签名</label>
+                        <div class="layui-input-inline layui-col-sm8">
+                            <select name="is_original_signature_show" id="is_original_signature_show2">
+                                <option value="否">否</option>
+                                <option value="是">是</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block" style="text-align: right;margin-top: 20px;">
+                        <button class="layui-btn" lay-submit lay-filter="submitFilter2" style="border-color: #1E9FFF;background-color: #1E9FFF;">保存</button>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class=""></div>

@@ -1,0 +1,113 @@
+<div class="layui-row">
+    <form id="jcxmGrouForm" class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" />
+        <div class="popup_title"><span>工程信息</span></div>
+	        <table class="custom-table">
+	        	<tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>委托编号</td>
+	                <td><input name="wtNum" id="wtNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>工程名称</td>
+	                <td class="search_parent"><input name="gcName" id="gcName" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="" readonly><i class='fa fa-search input_icon' onclick="wtgl_info.selectDepart();"></i></td> 
+	                
+	            </tr>
+	            <tr>
+	            	<td class="custom-form-label"><span class="mandatory"></span>工程项目编号</td>
+	                <td><input name="gcCode" id="gcCode" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="" readonly></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>工程地址</td>
+	                <td><input name="gcAddress" id="gcAddress" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="" readonly></td>             
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>幕墙面积</td>
+	                <td><input name="mqmj" id="mqmj" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>幕墙类型</td>
+	                <td>
+	                	<select name="mqType" id="mqType" lay-verify="">
+				        <option value=""></option>
+				        <option value="玻璃幕墙">玻璃幕墙</option>
+				        <option value="石材幕墙">石材幕墙</option>
+				     </select>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>委托单位</td>
+	                <td><input name="wtUnit" id="wtUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="" readonly></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>登记时间</td>
+	                <td>
+	                	<div class="date_parent">
+	                	<input id="syDate" name="syDate"  autocomplete="off" class="layui-input custom-input-noborder" readonly ><i class="date_icon"></i>
+	                	</div>
+	                </td>
+	            </tr>
+	            <tr>
+	            	<td class="custom-form-label">幕墙设计单位</td>
+	                <td><input name="sjUnit" id="sjUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>  
+	            	<td class="custom-form-label">幕墙施工单位</td>
+	                <td><input name="jsUnit" id="jsUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>                                         
+	            </tr>
+	            <tr>
+	            	<td class="custom-form-label"><span class="mandatory"></span>设计时间</td>
+	                <td>
+	                	<div class="date_parent">
+	                	<input id="sjDate" name="sjDate"  autocomplete="off" class="layui-input custom-input-noborder" readonly ><i class="date_icon"></i>
+	                	</div>
+	                </td>
+	                <td class="custom-form-label"><span class="mandatory"></span>施工时间</td>
+	                <td>
+	                	<div class="date_parent">
+	                	<input id="jgDate" name="jgDate"  autocomplete="off" class="layui-input custom-input-noborder" readonly><i class="date_icon"></i>
+	                	</div>
+	                </td>                         
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>委托人</td>
+	                <td><input name="wtMan" id="wtMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>委托人电话</td>
+	                <td><input name="wtManTel" id="wtManTel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>监理单位</td>
+	                <td><input name="jzUnit" id="jzUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="" readonly></td>
+	                <td class="custom-form-label"><span class="mandatory"></span>监理人</td>
+	                <td><input name="jzMan" id="jzMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="" readonly></td>
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>鉴定单位</td>
+	                <td><input name="jcUnit" id="jcUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="广东省建筑科学研究院集团股份有限公司"></td>
+	                <td class="custom-form-label">鉴定时间</td>
+	                <td>
+	                	<div class="date_parent">
+	                	<input id="qdDate" name="qdDate"  autocomplete="off" class="layui-input custom-input-noborder" readonly ><i class="date_icon"></i>
+	                	</div>
+	                </td>
+	            </tr> 
+				<tr>
+	                <td class="custom-form-label">基本风压</td>
+	                <td><input name="fy" id="fy" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	                <td class="custom-form-label">最高标高</td>
+	                <td><input name="maxbg" id="maxbg" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	            </tr>
+	            <tr>
+	                <td class="custom-form-label">抗震设防烈度</td>
+	                <td><input name="kzqd" id="kzqd" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	                <td class="custom-form-label">地面粗糙度类别</td>
+	                <td><input name="dmccType" id="dmccType" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	            </tr> 
+	            <tr>
+	                <td class="custom-form-label"><span class="mandatory"></span>依据标准</td>
+	                <td colspan="3"><input name="jybz" id="jybz" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	            </tr> 
+	            <tr>
+	                <td class="custom-form-label">备注</td>
+	                <td colspan="3"><input name="beizhu" id="beizhu" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+	            </tr>                     
+	         </table>
+	     <div class="popup_title" style="height:44px;line-height:48px">
+	     	<span>鉴定单元划分</span>
+	     	<a href="javascript:void(0);" class="btn1" style="float: right;margin-top: 8px;" onclick=wtgl_info.add_jcxmgrou()>新增</a>
+	     </div>         
+         <div class="data_list_single">
+		    <table class="layui-hide layui-table" id="jcxmGrouTable" lay-size="sm"></table>
+		</div>
+        <button id="wtgl_infoBtn" class="layui-btn" lay-submit="" lay-filter="wtgl_infoFilter" style="display: none;"></button>
+    </form>
+</div>

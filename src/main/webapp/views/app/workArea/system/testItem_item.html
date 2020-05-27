@@ -1,0 +1,20 @@
+<div class="layui-row">
+    <form class="layui-form">
+        <input type="hidden" name="id"/>
+        <div class="layui-form-item" style="margin-top: 5px;">
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>项目名称</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="xmName" id="xmName" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory">*</span>项目标准号</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="defaultPdStd" id="defaultPdStd" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+        </div>
+        <button id="testItem_itemBtn" class="layui-btn" lay-submit="" lay-filter="testItem_itemFilter" style="display: none;"></button>
+    </form>
+</div>

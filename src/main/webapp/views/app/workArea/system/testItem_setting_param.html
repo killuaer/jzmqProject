@@ -1,0 +1,37 @@
+<div class="layui-row">
+    <form class="layui-form">
+        <input type="hidden" name="id"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory">*</span>检测参数名称</td>
+                <td colspan='5'><input name="paramName" lay-verify="required" class="layui-input custom-input-noborder" ></td>
+                
+            </tr>
+            <tr>
+                <td class="custom-form-label">排序</td>
+                <td colspan='5'><input name="ord" lay-verify="required" class="layui-input custom-input-noborder" ></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">是否默认参数</td>
+                <td colspan='5'>
+                    <select name="isDefault">
+                        <option value=""></option>
+                        <option value="是">是</option>
+                        <option value="否">否</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">是否开放参数</td>
+                <td colspan='5'>
+                    <select name="isOpen">
+                        <option value=""></option>
+                        <option value="是">是</option>
+                        <option value="否">否</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button id="testItem_setting_paramBtn" class="layui-btn" lay-submit="" lay-filter="testItem_setting_paramFilter" style="display: none;"></button>
+    </form>
+</div>

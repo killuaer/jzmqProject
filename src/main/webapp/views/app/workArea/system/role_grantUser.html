@@ -1,0 +1,21 @@
+<div class="query_conditions">
+    <div class="query_conditions_main">
+        <ul class="query_conditionss">
+            <li>
+                <span class="layui-col-sm4">姓名</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="name_grantUser" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cxbtn">
+        <div class="cxbtnShow">
+            <a href="#" class="btn1" onclick="grantUser.queryList()">查询</a>
+        </div>
+    </div>
+</div>
+<div class="data_list">
+    <table class="layui-hide layui-table" id="grantUserTable" lay-filter="grantUserTableFilter" lay-size="sm"></table>
+</div>

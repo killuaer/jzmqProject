@@ -1,0 +1,29 @@
+<div class="query_conditions">
+    <div class="query_conditions_main">
+        <ul class="query_conditionss">
+            <li>
+                <span class="layui-col-sm4">单位名称</span>
+                 <div class="layui-input-inline layui-col-sm8">
+                <input id="name_unit" lay-verify="required" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">单位编号</span>
+                 <div class="layui-input-inline layui-col-sm8">
+                <input id="code_unit" lay-verify="required" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cxbtn">
+        <div class="cxbtnShow">
+            <a href="#" class="btn1" onclick="unit.queryList()">查询</a>
+            <a href="#" class="btn1" onclick="unit.add_entity()">新增</a>
+            <a href="#" class="btn1" onclick="unit.toReset()">重置</a><br>
+        </div>
+    </div>
+</div>
+<div class="data_list data_list_single">
+    <table class="layui-hide layui-table" id="unitTable" lay-size="sm"></table>
+</div>

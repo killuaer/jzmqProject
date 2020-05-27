@@ -1,0 +1,21 @@
+<div class="layui-row" style="position: relative;height: 100%;margin: 0 20px;">
+    <div class="leftDiv" id="leftDiv">
+        <div class="leftDiv_sx" style="padding-top: 10px;">
+            <ul id="tree_customCode"></ul>
+        </div>
+    </div>
+    <div style="width: auto;height: 100%;position: relative;margin-left: 321px;">
+        <div id="rightDiv" class="rightDiv">
+            <input type="hidden" id="selectCustomCode" />
+            <div class="bgtop">
+                <a href="#" class="bgtop_title">
+                    <span>编号格式列表</span>
+                </a>
+                <a href="javascript:void(0);" class="btn2" onclick=customCode.add_customCode()>新增</a>
+            </div>
+            <div class="data_list" style="margin-top: 0px;height: calc(100% - 65px);">
+                <table class="layui-hide layui-table" id="customCodeTable" lay-size="sm"></table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+		<title>建筑幕墙鉴定智能工作系统-登录</title>
+
+		<!--引入layui-->
+		<link rel="stylesheet" href="assets/layui-v2.2.5/layui/css/layui.css" />
+		<link rel="stylesheet" href="assets/font-awesome-5.9.0/css/fontawesome-all.css" />
+		<script type="text/javascript" src="assets/jquery/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="assets/layui-v2.2.5/layui/layui.js"></script>
+
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+
+	<body>
+		<div class="layui-fluid">
+			<div class="layui-row">
+				<!--背景图-->
+				<div class="login-bg">
+					<div class="login-bg-img"></div>
+					<div class="login-footer">
+						<p>技术支持：<a href="http://www.3hmis.com/">广州粤建三和软件股份有限公司</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+							全国营销热线：400-37038619&nbsp;&nbsp;&nbsp;&nbsp; 
+							企业QQ：4007000272</p>
+					</div>
+				</div>
+				<!--登陆区域-->
+				<div class="login-area">
+					<div class="layui-tab">
+
+						<ul class="layui-tab-title">
+							<li class="layui-this" style="width:100%; text-align:left;left: 10px;"><i class="fa fa-lock"></i>&nbsp;&nbsp;用户登录</li>
+<!--						<li class="layui-this"><i class="fa fa-lock"></i>&nbsp;&nbsp;密码登录</li>
+							<li><i class="fa fa-qrcode"></i>&nbsp;&nbsp;扫码登录</li>  -->
+						</ul>
+
+						<div class="layui-tab-content">
+							<div class="layui-tab-item layui-show">
+								<form class="layui-form layui-form-pane" action="views/main.html" method="post" id="login_form">
+                                    <input type="hidden"  id="username" name="username"/>
+                                    <input type="hidden"  id="password" name="password"/>
+									<!--加密狗登录-->
+									<div class="layui-form-item" style="display: none;">
+										<label class="layui-form-label">狗加密</label>
+										<div class="layui-input-block">
+											<input type="text" name="keyId" id="keyId" />
+										</div>
+									</div>
+									<!--常规登录-->
+									<div class="layui-form-item" pane>
+										<label class="layui-form-label"><img src="img/user.png"/></label>
+										<div class="layui-input-block">
+											<input value="" type="text" id="p_username" name="" lay-verify="username" placeholder="请输入账号" autocomplete="off" class="layui-input" />
+										</div>
+									</div>
+									<div class="layui-form-item" pane>
+										<label class="layui-form-label"><img src="img/password1.png"/></label>
+										<div class="layui-input-block">
+											<input value="" id="p_password" type="password" name="" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" />
+										</div>
+									</div>
+									<div class="verify-wrap" id="verify-wrap2"></div>
+									<div style="height:20px;width:100%" >
+									</div>
+<!--									<div class="layui-form-item" pane>
+										<label class="layui-form-label"><img src="img/VCcode.png"/></label>
+										<div class="layui-input-inline">
+											<input value="3hmis" type="text" name="processNum" lay-verify="processNum" placeholder="请输入验证码" autocomplete="off" class="layui-input" />
+										</div>
+										<img id="processImg" onclick="changeImg(this);" src="captcha-image.jpg" />
+									</div>									
+									<button id="submitCtrl" style="display: none;" lay-submit></button>
+									<button id="submitCtrlWithoutVerify" style="display: none;">submitCtrlWithout</button>  -->
+								</form>
+								
+								<!--登录按钮-->
+								<div class="layui-row">
+									<div class="layui-col-xs6">
+										<button onclick="login()" id="login_btn" class="layui-btn layui-btn-normal login_btn">登&nbsp;&nbsp;录</button>
+									</div>
+<!--								<div class="layui-col-xs6">
+										<button onclick="doglogin()" class="layui-btn layui-btn-normal dog_login">加密锁登录（仅支持IE）</button>
+									</div>  -->	
+									<div class="layui-col-xs6">
+										<a id="forget_password" class="forget_password" href="javascript:void(0)" onclick="back()">忘记密码&nbsp;&nbsp;<i class="fa fa-question-circle"></i></a>
+									</div>
+								</div>
+								<!--忘记密码-->
+<!--							<div class="login_assist">
+									<a id="forget_password" class="forget_password" href="javascript:void(0)">忘记密码&nbsp;&nbsp;<i class="fa fa-question-circle"></i></a>
+								</div>  -->	
+							</div>
+							
+							<!--二维码登录-->
+							<div class="layui-tab-item">
+								<img />
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</body>
+	<object classid="clsid:0272DA76-96FB-449E-8298-178876E0EA89" id="ePass" name="ePass" style="left: 0px; top: 0px" width="0" height="0">
+    </object>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/jq-slideVerify.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/tripledes/3.1.2/tripledes.js"></script>
+    <script type="text/javascript" src="assets/mode-ecb/3.1.2/mode-ecb.js"></script>
+</html>

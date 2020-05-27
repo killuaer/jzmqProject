@@ -1,0 +1,76 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id"/>
+        <input type="hidden" name="roleIds" id="roleIds"/>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>用户姓名</td>
+                <td colspan='5'><input name="name" id="name" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>用户账号</td>
+                <td colspan='5'><input name="loginName" id="loginName" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>密码</td>
+                <td colspan='5'><input name="password" id="password" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">角色</td>
+                <td class="search_parent" colspan='5'><input name="roleNames" id="roleNames" lay-verify="" class="layui-input custom-input-noborder searchText"><i id="selectRoleBtn" class="fa fa-search input_icon"></i></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>联系电话</td>
+                <td colspan='5'><input name="phone" id="phone" lay-verify="required" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">邮箱</td>
+                <td colspan='5'><input name="email" id="email" lay-verify="" class="layui-input custom-input-noborder searchText"></td>
+            </tr>
+        </table>
+<!--
+        <div class="layui-form-item" style="margin-top: 5px;">
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory"></span>用户姓名</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="name" id="name" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory"></span>用户账号</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="loginName" id="loginName" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory"></span>密码</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="password" id="password" type="password" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2">角色</label>
+                <div class="layui-input-inline layui-col-sm9">
+                    <input name="roleNames" id="roleNames" lay-verify="" class="layui-input" >
+                </div>
+                <div class="layui-input-inline layui-col-sm1">
+                    <a href="#" id="selectRoleBtn" class="layui-btn selectBtn"><span class="fa fa-search"></span></a>
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2"><span class="mandatory"></span>联系电话</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="phone" id="phone" lay-verify="required" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline layui-col-sm12">
+                <label class="layui-form-label layui-col-sm2">邮箱</label>
+                <div class="layui-input-inline layui-col-sm10">
+                    <input name="email" id="email" lay-verify="" class="layui-input" >
+                </div>
+            </div>
+        </div>
+-->
+        <button id="structure_accountBtn" class="layui-btn" lay-submit="" lay-filter="structure_accountFilter" style="display: none;"></button>
+    </form>
+</div>

@@ -1,0 +1,73 @@
+<!--
+<form class="layui-form">
+<div class="demo_list">
+</div>
+</form>
+-->
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id"/>
+        <div class="custom-form-title">样品信息</div>
+        <div id="sample_message">
+        <table class="custom-table" cellspacing="0" cellpadding="0" style="width:100%">
+            <tr>
+                <td class="custom-form-label">检测参数</td>
+                <td  colspan='5'><input name="regdate" id="regdate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="外观质量、尺寸偏差、孔隙率、最小外壁、最小肋厚、抗压强度、最大吸水率、线性干燥收缩率和相对含水率、抗冻性、碳化系数、软化系数、放射性" readonly></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">规格尺寸</td>
+                <td  colspan='2'><input name="frdb" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="240×115×90"></td>
+                <td class="custom-form-label">强度等级</td>
+                <td colspan='2'><input name="techResp" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="MU15"></td>
+            </tr>
+        </table>
+        </div>
+        <div id="test_parameters">
+<!--
+        <table class="custom-table" cellspacing="0" cellpadding="0" style="width:100%">
+            <tr>
+                <td colspan="6" class="custom-form-title">样品信息</td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">检测参数</td>
+                <td  colspan='5'><input name="regdate" id="regdate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="外观质量、尺寸偏差、孔隙率、最小外壁、最小肋厚、抗压强度、最大吸水率、线性干燥收缩率和相对含水率、抗冻性、碳化系数、软化系数、放射性" readonly></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">规格尺寸</td>
+                <td  colspan='2'><input name="frdb" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="240×115×90"></td>
+                <td class="custom-form-label">强度等级</td>
+                <td><input name="techResp" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="MU15"></td>
+            </tr>
+        </table>
+-->
+        </div>
+        <div id="detection_conclusion">
+            <div class="custom-form-title">检验 / 检测结论</div>
+            <table class="custom-table" cellspacing="0" cellpadding="0" style="width:100%">
+                <tr>
+                    <td class="custom-form-label">检测结论</td>
+                    <td  colspan='5'><input name="regdate" id="regdate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="样品经检测，外观质量不符合GB 25779-2010标准规定的要求，其它已检项目符合标准要求。" readonly></td>
+                </tr>
+                
+                <tr>
+                    <td class="custom-form-label">结论状态</td>
+                    <td  colspan='5'><input name="regdate" id="regdate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="N" readonly></td>
+                </tr>
+                <tr>
+                    <td class="custom-form-label">不合格参数</td>
+                    <td  colspan='5'><input name="regdate" id="regdate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="外观质量" readonly></td>
+                </tr>
+            </table>
+            <div class="custom-form-title"></div>
+            <table class="custom-table" cellspacing="0" cellpadding="0" style="width:100%">
+                <tr>
+                    <td class="custom-form-label">主检人员</td>
+                    <td class="search_parent" colspan='2'><input name="frdb" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="240×115×90"><i class="fa fa-search input_icon"></i></td>
+                    <td class="custom-form-label">辅检人员</td>
+                    <td class="search_parent" colspan='2'><input name="techResp" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value="徐慧"><i class="fa fa-search input_icon"></i></td>
+                </tr>
+            </table> 
+        </div>
+        <button id="todoWork_infoBtn" class="layui-btn" lay-submit="" lay-filter="todoWork_infoFilter" style="display: none;"></button>
+    </form>
+</div>

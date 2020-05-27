@@ -1,0 +1,63 @@
+<div class="query_conditions">
+    <div class="query_conditions_main">
+        <ul class="query_conditionss">
+            <li>
+                <span class="layui-col-sm4">人员编号</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="code" autocomplete="off" class="layui-input custom-input-noborder searchText"><i id="selectRyCodeBtn" class="fa fa-search input_icon_main"></i>
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">姓名</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="name" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">所在部门</span>
+                <div class="layui-input-inline layui-col-sm8 search_parent">
+                <input id="departName" autocomplete="off" class="layui-input custom-input-noborder">
+                <i class="fa fa-search input_icon_main" onclick="staff.selectDepart();"></i>
+                <input id="departId"  type="hidden">
+                </div>
+<!--                 <div class="layui-input-inline layui-col-sm1">
+                    <a href="javascript:void(0);" onclick="staff.selectDepart();" class="layui-btn selectBtn" style="width:100%;height: 30px;background-color: #4476A7;line-height: 30px;"><span class="fa fa-search"></span></a>
+                </div> -->
+            </li>
+            <li>
+                <span class="layui-col-sm4">专业</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="major" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">职称</span>
+                <div class="layui-input-inline layui-col-sm8">
+                <input id="busy" autocomplete="off" class="layui-input custom-input-noborder">
+                </div>
+            </li>
+            <li>
+                <span class="layui-col-sm4">出生日期</span>
+                <div class="layui-input-inline date_parent" style="width: 30%;float: left;">
+                    <input id="starttime" autocomplete="off" class="layui-input custom-input-noborder" readonly><i class="date_icon_main"></i>
+                </div>
+                <p class="toThe">-</p>
+                <div class="layui-input-inline date_parent" style="width: 30%;float: left;">
+                    <input id="endtime" autocomplete="off" class="layui-input custom-input-noborder" readonly><i class="date_icon_main"></i>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+
+    <div class="cxbtn">
+        <div class="cxbtnShow">
+            <a href="#" class="btn1" onclick="staff.queryList()">查询</a>
+            <a href="#" class="btn1" onclick="staff.add_entity()">新增</a>
+            <a href="#" class="btn1" onclick="staff.toReset()">重置</a>
+        </div>
+    </div>
+</div>
+<div class="data_list">
+    <table class="layui-hide layui-table" id="staffTable" lay-size="sm"></table>
+</div>

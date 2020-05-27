@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:attribute name="num" type="xs:string" />
+<xs:attribute name="type" type="xs:string" />
+<xs:attribute name="border" type="xs:string" />
+<xs:attribute name="cellSpacing" type="xs:string" />
+<xs:attribute name="importClass" type="xs:string" />
+<xs:attribute name="cellPadding" type="xs:string" />
+<xs:attribute name="defaultValue" type="xs:string" />
+<xs:attribute name="width" type="xs:string" />
+<xs:attribute name="style" type="xs:string" />
+<xs:attribute name="id" type="xs:string" />
+<xs:attribute name="binding" type="xs:string" />
+<xs:attribute name="itemNote" type="xs:string" />
+<xs:attribute name="class" type="xs:string" />
+<xs:attribute name="align" type="xs:string" />
+<xs:attribute name="value" type="xs:string" />
+<xs:attribute name="colspan" type="xs:string" />
+<xs:attribute name="onclick" type="xs:string" />
+<xs:attribute name="name" type="xs:string" />
+<xs:attribute name="br" type="xs:string" />
+<xs:attribute name="sub" type="xs:string" />
+<xs:attribute name="sup" type="xs:string" />
+<xs:attribute name="height" type="xs:string" />
+<xs:attribute name="data_options" type="xs:string" />
+<xs:attribute name="frame" type="xs:string" />
+<xs:attribute name="rules" type="xs:string" />
+<xs:attribute name="bgcolor" type="xs:string" />
+<xs:attribute name="defaultStyle" type="xs:string" />
+<xs:attribute name="enable" type="xs:string" />
+<xs:attribute name="valign" type="xs:string" />
+<xs:attribute name="size" type="xs:string" />
+<xs:attribute name="src" type="xs:string" />
+<xs:attribute name="title" type="xs:string" />
+<xs:attribute name="dateformat" type="xs:string" />
+<xs:attribute name="rowid" type="xs:string" />
+<xs:attribute name="iswrite" type="xs:string" />
+<xs:attribute name="isshow" type="xs:string" />
+<xs:attribute name="isauto" type="xs:string" />
+<xs:attribute name="list" type="xs:string" />
+<xs:attribute name="headerValue" type="xs:string" />
+<xs:attribute name="nowrap" type="xs:string" />
+<xs:attribute name="rowspan" type="xs:string" />
+<xs:attribute name="rows" type="xs:string" />
+<xs:attribute name="cols" type="xs:string" />
+<xs:attribute name="accesskey" type="xs:string" />
+<xs:attribute name="tabindex" type="xs:string" />
+<xs:attribute name="onchange" type="xs:string" />
+<xs:attribute name="onsubmit" type="xs:string" />
+<xs:attribute name="onreset" type="xs:string" />
+<xs:attribute name="onselect" type="xs:string" />
+<xs:attribute name="onblur" type="xs:string" />
+<xs:attribute name="onfocus" type="xs:string" />
+<xs:attribute name="ondblclick" type="xs:string" />
+<xs:attribute name="onmousedown" type="xs:string" />
+<xs:attribute name="onmousemove" type="xs:string" />
+<xs:attribute name="onmouseout" type="xs:string" />
+<xs:attribute name="onmouseover" type="xs:string" />
+<xs:attribute name="onmouseup" type="xs:string" />
+<xs:attribute name="onkeydown" type="xs:string" />
+<xs:attribute name="onkeypress" type="xs:string" />
+<xs:attribute name="onkeyup" type="xs:string" />
+<xs:attribute name="disabled" type="xs:string" />
+<xs:attribute name="label" type="xs:string" />
+<xs:attribute name="selected" type="xs:string" />
+<xs:attribute name="status" type="xs:string" />
+<xs:attribute name="textfield" type="xs:string" />
+<xs:attribute name="readonly" type="xs:string" />
+<xs:attribute name="href" type="xs:string" />
+<xs:attribute name="alt" type="xs:string" />
+<xs:attribute name="linkfield" type="xs:string" />
+<xs:attribute name="linkproject" type="xs:string" />
+<xs:attribute name="position" type="xs:string" />
+
+<xs:element name="panel" >
+ <xs:complexType>
+  <xs:sequence>
+      <xs:element ref="row" maxOccurs="unbounded"/>
+    </xs:sequence>
+  <xs:attribute ref="num" use="required"/>
+  <xs:attribute ref="type" use="required"/>
+  <xs:attribute ref="importClass" use="required"/>
+  <xs:attribute ref="border" />
+  <xs:attribute ref="cellSpacing" />
+  <xs:attribute ref="cellPadding" />
+  <xs:attribute ref="defaultValue" />
+  <xs:attribute ref="width" />
+  <xs:attribute ref="style" />
+  <xs:attribute ref="align" />
+  <xs:attribute ref="class" />
+  <xs:attribute ref="itemNote" />
+  <xs:attribute ref="id" />
+  <xs:attribute ref="name" />
+  <xs:attribute ref="sub" />
+  <xs:attribute ref="sup" />
+  <xs:attribute ref="position" />
+  <xs:attribute ref="frame" />
+  <xs:attribute ref="rules" />
+  <xs:attribute ref="defaultStyle" />
+  <xs:attribute ref="size"/>
+  <xs:attribute ref="src" />
+  <xs:attribute ref="title" />
+  
+ </xs:complexType>
+</xs:element>
+
+
+
+<xs:element name="row">
+ <xs:complexType >
+   <xs:sequence>
+      <xs:element ref="col" maxOccurs="unbounded"/>
+    </xs:sequence> 
+  <xs:attribute ref="num" use="required"/>
+  <xs:attribute ref="type" use="required"/>
+  <xs:attribute ref="width" />
+  <xs:attribute ref="style" />
+  <xs:attribute ref="align" />
+  <xs:attribute ref="value" />
+  <xs:attribute ref="binding" />
+  <xs:attribute ref="class" />
+  <xs:attribute ref="itemNote" />
+  <xs:attribute ref="colspan" />
+  <xs:attribute ref="id" />
+  <xs:attribute ref="onclick" />
+  <xs:attribute ref="name" />
+  <xs:attribute ref="position" />
+  
+ </xs:complexType>
+ </xs:element>
+<xs:element name="col">
+ <xs:complexType >
+  	<xs:attribute ref="num" use="required"/>
+ 	<xs:attribute ref="type" use="required"/>
+	<xs:attribute ref="width" />
+	<xs:attribute ref="style" />
+	<xs:attribute ref="id" />
+	<xs:attribute ref="binding" />
+	<xs:attribute ref="itemNote" />
+	<xs:attribute ref="class" />
+	<xs:attribute ref="align" />
+	<xs:attribute ref="value"  />
+	<xs:attribute ref="colspan" />
+	<xs:attribute ref="onclick" />
+	<xs:attribute ref="name"  />
+	<xs:attribute ref="br" />
+	<xs:attribute ref="sub" />
+	<xs:attribute ref="sup" />
+	<xs:attribute ref="height" />
+	<xs:attribute ref="data_options" />
+	<xs:attribute ref="frame" />
+	<xs:attribute ref="rules" />
+	<xs:attribute ref="bgcolor" />
+	<xs:attribute ref="defaultStyle" />
+	<xs:attribute ref="enable" />
+	<xs:attribute ref="valign" />
+	<xs:attribute ref="size" />
+	<xs:attribute ref="src" />
+	<xs:attribute ref="title" />
+	<xs:attribute ref="dateformat" />
+	<xs:attribute ref="rowid" />
+	<xs:attribute ref="iswrite" />
+	<xs:attribute ref="isshow"  />
+	<xs:attribute ref="isauto" />
+	<xs:attribute ref="list" />
+	<xs:attribute ref="headerValue"  />
+	<xs:attribute ref="nowrap"  />
+	<xs:attribute ref="rows"  />
+	<xs:attribute ref="cols"  />
+	<xs:attribute ref="accesskey"  />
+	<xs:attribute ref="tabindex"  />
+	<xs:attribute ref="onchange"  />
+	<xs:attribute ref="onsubmit"  />
+	<xs:attribute ref="onreset"  />
+	<xs:attribute ref="onselect"  />
+	<xs:attribute ref="onblur"  />
+	<xs:attribute ref="onfocus" />
+	<xs:attribute ref="ondblclick"  />
+	<xs:attribute ref="onmousedown" />
+	<xs:attribute ref="onmousemove" />
+	<xs:attribute ref="onmouseout" />
+	<xs:attribute ref="onmouseover" />
+	<xs:attribute ref="onmouseup" />
+	<xs:attribute ref="onkeydown"  />
+	<xs:attribute ref="onkeypress"  />
+	<xs:attribute ref="onkeyup"  />
+	<xs:attribute ref="disabled"  />
+	<xs:attribute ref="label"  />
+	<xs:attribute ref="selected"  />
+	<xs:attribute ref="status"  />
+	<xs:attribute ref="textfield"  />
+	<xs:attribute ref="readonly"  />
+	<xs:attribute ref="href"  />
+	<xs:attribute ref="alt"  />
+	<xs:attribute ref="linkfield"  />
+	<xs:attribute ref="linkproject"  />
+	<xs:attribute ref="position"  />
+
+ </xs:complexType>
+ </xs:element>
+</xs:schema>

@@ -1,0 +1,47 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding: 10px;">
+        <input type="hidden" name="id" id="unitId" />
+        <div class="popup_title"><span>单位信息</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label"><span class="mandatory"></span>单位名称</td>
+                <td><input name="name" id="unitName" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label"><span class="mandatory"></span>单位类型</td>
+                <td>
+                    <select name="type" id="type" lay-filter='typeUnit'>
+                        <option value="委托单位">委托单位</option>
+                        <option value="建设单位">建设单位</option>
+                        <option value="施工单位">施工单位</option>
+                        <option value="监理单位">监理单位</option>
+                        <option value="设计单位">设计单位</option>
+                        <option value="勘察单位">勘察单位</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">单位地址</td>
+                <td><input name="address" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">单位编号</td>
+                <td><input name="code" id="code" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" readonly></td>
+            </tr>
+            <tr id="wtList">
+                <td class="custom-form-label">委托人</td>
+                <td><input name="contactPerson" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder"></td>
+                <td class="custom-form-label">联系电话</td>
+                <td><input name="contactPhone" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">登记人</td>
+                <td><input name="creator" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" readonly></td>
+                <td class="custom-form-label">登记时间</td>
+                <td><input name="createTimeStr" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" value="" readonly></td>
+            </tr>
+        </table>
+        <button id="unit_infoBtn" class="layui-btn" lay-submit="" lay-filter="unit_infoFilter" style="display: none;"></button>
+        <div class="popup_title"><span>联系人信息</span><a href="#" class="btn1" onclick="add_person()" style="float: right;">新增</a></div>
+        <div class="data_list" style="width: 100%;height: 100%;margin-top: 0px;border-top: none;">
+            <table class="layui-hide layui-table" id="personTable" lay-size="sm" lay-filter="personTableFilter"></table>
+        </div>
+    </form>
+    
+</div>

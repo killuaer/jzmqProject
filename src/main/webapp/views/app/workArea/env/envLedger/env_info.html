@@ -1,0 +1,139 @@
+<div class="layui-row">
+    <form class="layui-form" style="padding:0 10px;">
+        <input type="hidden" name="id" />
+        <div class="popup_title"><span>基本信息</span></div>
+        <table class="custom-table">
+            <tr>
+            	<td class="custom-form-label"><span class="mandatory"></span>设备编号</td>
+                <td><input name="sbCode" id="sbCode" lay-verify="required" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label"><span class="mandatory"></span>设备名称</td>
+                <td><input name="sbName" id="sbName" lay-verify="required" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设备类型</td>
+                <td><input name="type" id="type" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">规格型号</td>
+                <td><input name="sbModel" id="sbModel" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">精度</td>
+                <td><input name="accuracy" id="accuracy" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">量程</td>
+                <td><input name="range" id="range" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">分度值</td>
+                <td><input name="indexValue" id="indexValue" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">不确定度</td>
+                <td><input name="uncertainty" id="uncertainty" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设备重量</td>
+                <td><input name="weight" id="weight" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">设备尺寸</td>
+                <td><input name="sizes" id="sizes" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设备电压</td>
+                <td><input name="voltageGrade" id="voltageGrade" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">设备功率</td>
+                <td><input name="power" id="power" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设备状态</td>
+                <td>
+	                <select name="status" id="status" lay-verify="">
+				        <option value=""></option>
+				        <option value="正常">正常</option>
+				        <option value="维修">维修</option>
+				        <option value="报废">报废</option>
+				     </select>
+			     </td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>出厂信息</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">出厂编号</td>
+                <td><input name="facNum" id="facNum" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">厂家国别</td>
+                <td><input name="country" id="country" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">出厂日期</td>
+                <td class="date_parent"><input name="facDate" id="facDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder dateType" value=""><i class="date_icon"></i></td>
+                <td class="custom-form-label">生产厂家</td>
+                <td><input name="factory" id="factory" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">购入日期</td>
+                <td class="date_parent"><input name="buyDate" id="buyDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder dateType" value=""><i class="date_icon"></i></td>
+                <td class="custom-form-label">设备原值</td>
+                <td><input name="buyDate" id="buyDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>使用信息</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">使用部门</td>
+                <td><input name="deparmentId" id="deparmentId" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">投入使用日期</td>
+                <td class="date_parent"><input name="serviceDate" id="serviceDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder dateType" value=""><i class="date_icon"></i></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">设备管理员</td>
+                <td><input name=manager id="manager" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">存放地点</td>
+                <td><input name="place" id="place" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+        </table>
+        <div class="popup_title"><span>计量信息</span></div>
+        <table class="custom-table">
+            <tr>
+                <td class="custom-form-label">计量设备</td>
+                <td><input name="jdjzMan" id="jdjzMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">检定/校准周期</td>
+                <td>
+	                <select name="status" id="status" lay-verify="">
+				        <option value=""></option>
+				        <option value="3个月">3个月</option>
+				        <option value="6个月">6个月</option>
+				        <option value="9个月">9个月</option>
+				        <option value="1年">1年</option>
+				        <option value="2年">2年</option>
+				        <option value="3年">3年</option>
+				     </select>
+			     </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">检定/校准单位</td>
+                <td><input name="jdjzUnit" id="jdjzUnit" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+                <td class="custom-form-label">检定/校准人</td>
+                <td><input name="jdjzMan" id="jdjzMan" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder" value=""></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">最新检定日期</td>
+                <td class="date_parent"><input name="jdjzDate" id="jdjzDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder dateType" value=""><i class="date_icon"></i></td>
+                <td class="custom-form-label">下次检定日期</td>
+                <td class="date_parent"><input name="nextJdjzDate" id="nextJdjzDate" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder dateType" value=""><i class="date_icon"></i></td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">备注</td>
+                <td colspan='5'>
+                    <textarea rows="3" style="width: 100%;">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="custom-form-label">登记人</td>
+                <td><input name="creator" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" readonly></td>
+                <td class="custom-form-label">登记时间</td>
+                <td><input name="createTimeStr" lay-verify="" autocomplete="off" class="layui-input custom-input-noborder layui-readonly" value="" readonly></td>
+            </tr>
+        </table>
+ 		<button id="env_infoBtn" class="layui-btn" lay-submit="" lay-filter="env_infoFilter" style="display: none;"></button>
+    </form>
+</div>
+       
