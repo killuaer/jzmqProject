@@ -30,7 +30,7 @@ import com.hhh.core.model.Whether;
 
 
 /**
- * The persistent class for the SYS_UCENTER_ACCOUNT database table.
+ * The persistent class for the SYS_UCENTER_ACCOUNT database table.11
  * 
  */
 @Entity
