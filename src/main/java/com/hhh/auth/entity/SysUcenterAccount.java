@@ -35,9 +35,9 @@ import com.hhh.core.model.Whether;
  */
 @Entity
 @Table(name="SYS_UCENTER_ACCOUNT")
-@NamedQuery(name="SysUcenterAccount.findAll", query="SELECT s FROM SysUcenterAccount s")
+@NamedQuery(name="SysUcenterAccount.findAll", query="SELECT a FROM SysUcenterAccount a")
 public class SysUcenterAccount implements Serializable {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 11L;
 
 	@Id
 	@GeneratedValue(generator = "idGenerator")
